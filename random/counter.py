@@ -3,7 +3,7 @@ from machine import Pin, SPI
 import time
 import framebuf
 
-spi = SPI(1, baudrate=40000000, polarity=0, phase=0,
+spi = SPI(1, baudrate=80000000, polarity=0, phase=0,
           sck=Pin(9), mosi=Pin(6), miso=Pin(5))
 dc = Pin(8, Pin.OUT)
 cs = Pin(7, Pin.OUT, value=1)
